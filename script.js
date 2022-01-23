@@ -13,3 +13,16 @@ function myFunction1() {
   function myFunction4() {
     alert("me too");
   }
+
+
+  function addClickListener(id, callback) {
+    document.getElementById(id).addEventListener("click", callback)
+  }
+
+  addClickListener("click1", myFunction1)
+  addClickListener("click2", myFunction2)
+  addClickListener("click3", myFunction3)
+  addClickListener("click4", myFunction4)
+
+
+
