@@ -1,3 +1,51 @@
-body {
-    background: blue;
+html {
+    box-sizing: border-box;
   }
+  *, *:before, *:after {
+    box-sizing: inherit;
+  }
+
+  html {
+    cursor: url('Images/lily-cursor.png'), pointer;
+}
+
+body {
+    background: rgb(238,174,202);
+    background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);
+    padding: 0 100px 
+  }
+
+.header {
+    font-family: 'Eczar', serif;
+    font-size: 150px;
+    line-height: 150px;
+  }
+
+  .container {
+    display: flex; /* or inline-flex */
+    justify-content: center;
+    column-gap: 40px;
+  }
+
+  .button {
+      margin-top: 500px;
+      border-radius: 50px;
+      border-color: #222222;
+      background-color: transparent;
+      text-align: center;
+      font-size: 30px;
+      font-family: monospace;
+      width: 500px;
+      padding: 20px;
+      margin: 30px;
+      display: block;
+  }
+
+  .button:hover {
+      background-color: #e6e994;
+      font-style: italic;
+      transition: .5s;
+      cursor: url('Images/lily-cursor.png'), pointer;
+  }
+
+  
